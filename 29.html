@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS class and object</title>
+</head>
+<body>
+    <script type="text/javascript">
+        class Person {
+            constructor(fname, lname) {
+                this.fname = fname;
+                this.lname = lname;
+            }
+        }
+
+        const person1 = new Person("Indira", "Regmi");
+        const person2 = new Person("Khageshwar", "Bashyal");
+
+        document.write(person1.fname + " " + person2.lname);
+    </script>
+</body>
+</html>

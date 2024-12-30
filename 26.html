@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <title>Square and Cube Calculator</title>
+    <script>
+        function calculate() {
+            var num = document.getElementById('numberInput').value;
+            document.getElementById('squareResult').innerHTML = 'Square: ' + num * num;
+            document.getElementById('cubeResult').innerHTML = 'Cube: ' + num * num * num;
+        }
+    </script>
+</head>
+<body>
+    <label for="numberInput">Enter a Number:</label>
+    <input type="text" id="numberInput">
+    <button onclick="calculate()">Calculate</button>
+    <p id="squareResult"></p>
+    <p id="cubeResult"></p>
+</body>
+</html>

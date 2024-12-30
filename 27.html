@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form Validation</title>
+</head>
+<body>
+    <script>
+        function validateForm() {
+            var username = document.getElementById('user').value;
+            var password = document.getElementById('pass').value;
+
+            if (username === '' || password === '') {
+                alert('Username or password cannot be empty');
+                
+            } else {
+                if (username === 'admin' || password === 'admin') {
+                    alert('Welcome to my page');
+                    
+                } else {
+                    alert("Either username or password is incorrect");
+                    
+                }
+            }
+        }
+    </script>
+    
+    <h2>Login Form</h2>
+
+    <form id="loginForm" onsubmit="return validateForm()">
+        <label>Username:</label>
+        <input type="text" id="user">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="pass">
+        <br>
+
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
